@@ -11,8 +11,9 @@ URL:              http://cran.r-project.org/web/packages/%{packname}/index.html
 Source0:          http://cran.r-project.org/src/contrib/%{packname}_0.3-1.tar.gz
 BuildArch:        noarch
 Requires:         R-core
-Requires:         R-stats R-utils R-methods R-Matrix 
-BuildRequires:    R-devel Rmath-devel texlive-collection-latex R-stats R-utils R-methods R-Matrix
+Requires:         R-stats R-utils R-methods R-Matrix
+BuildRequires:    R-devel Rmath-devel texlive-collection-latex
+BuildRequires:    R-stats R-utils R-methods R-Matrix
 
 %description
 Modelling with sparse and dense 'Matrix' matrices, using modular
