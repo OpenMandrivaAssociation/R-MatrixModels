@@ -11,9 +11,18 @@ URL:              http://cran.r-project.org/web/packages/%{packname}/index.html
 Source0:          http://cran.r-project.org/src/contrib/%{packname}_0.3-1.tar.gz
 BuildArch:        noarch
 Requires:         R-core
-Requires:         R-stats R-utils R-methods R-Matrix
-BuildRequires:    R-devel Rmath-devel texlive-collection-latex
-BuildRequires:    R-stats R-utils R-methods R-Matrix
+Requires:         R-stats
+Requires:         R-utils
+Requires:         R-methods
+Requires:         R-Matrix 
+BuildRequires:    R-devel
+BuildRequires:    Rmath-devel
+BuildRequires:    texlive-collection-latex
+BuildRequires:    R-stats
+BuildRequires:    R-utils
+BuildRequires:    R-methods
+BuildRequires:    R-Matrix
+BuildRequires:    pkgconfig(lapack)
 
 %description
 Modelling with sparse and dense 'Matrix' matrices, using modular
@@ -42,3 +51,11 @@ rm -f %{buildroot}%{rlibdir}/R.css
 %{rlibdir}/%{packname}/Meta
 %{rlibdir}/%{packname}/R
 %{rlibdir}/%{packname}/help
+
+
+%changelog
+* Fri Feb 17 2012 Paulo Andrade <pcpa@mandriva.com.br> 0.3_1-1
++ Revision: 776204
+- Import R-MatrixModels
+- Import R-MatrixModels
+
